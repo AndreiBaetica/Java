@@ -1,7 +1,5 @@
 package com.AIS.Application1;
 
-import java.util.Scanner;
-
 public class Application {
 
 	public static void main(String[] args) {
@@ -47,21 +45,29 @@ public class Application {
 		 * while(value!=5);
 		 * 
 		 * System.out.println("got 5.");
+		 * 
+		 * Scanner input = new Scanner(System.in);
+		 * System.out.println("Enter a command: "); String text =
+		 * input.nextLine(); switch (text) { case "start":
+		 * System.out.println("Machine started."); break; case "stop":
+		 * System.out.println("Machine stopped."); break; default:
+		 * System.out.println("Command not recognized");
+		 * 
+		 * 
+		 * String[] numbers = { "one", "two" }; System.out.println(numbers[0]);
 		 */
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a command: ");
-		String text = input.nextLine();
-		switch (text) {
-		case "start":
-			System.out.println("Machine started.");
-			break;
-		case "stop":
-			System.out.println("Machine stopped.");
-			break;
-		default:
-			System.out.println("Command not recognized");
-		}
+		int[][] grid = {
+				{ 3, 5, 7 }, 
+				{ 9, 6 }, 
+				{ 20, 45, 67, 1 } 
+		};
 
+		for (int row = 0; row < grid.length; row++) {
+			for (int col = 0; col < grid[row].length; col++) {
+				System.out.print(grid[row][col] + "\t");
+			}
+			System.out.println();
+		}
 	}
 
 }
