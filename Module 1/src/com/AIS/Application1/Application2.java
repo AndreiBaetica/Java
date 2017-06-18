@@ -45,10 +45,24 @@ class Frog {
 }
 class Machine {
 	private String name;
+	private int code;
 	public Machine() {
+		
 		System.out.println("Constructor running.");
-		name = "Arnie";
 	}
+	public Machine(String name){
+		System.out.println("Second constructor running.");
+		this.name = name;
+	}
+	public Machine(String name, int code) {
+		System.out.println("Third constructor running.");
+		this.name = name;
+		this.code = code;		
+	}
+}
+class Thing {
+	public String name;
+	public static String description;
 }
 public class Application2 {
 
@@ -68,6 +82,16 @@ public class Application2 {
 		sam.speak("speak");
 		sam.jump(7);
 		sam.move("West", 12.7);
+		
+		Machine machine1 = new Machine();
+		Machine machine2 = new Machine("Bert");
+		Machine machine3 = new Machine("Chalk", 7);
+		
+		Thing thing1 = new Thing();
+		Thing thing2 = new Thing();
+		thing1.name = "Bob";
+		thing2.name = "Sue";
+		
 	}
 
 }
