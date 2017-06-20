@@ -61,8 +61,21 @@ class Machine {
 	}
 }
 class Thing {
+	public final static int LUCKY_NMBR=7;
 	public String name;
 	public static String description;
+	public void showName(){
+		System.out.println(description+": "+name);
+	}
+	public static void showInfo() {
+		System.out.println(description);	
+	}
+	public static int count=0;
+	public int id;
+	public Thing(){
+		id=count;
+		count++;
+	}
 }
 public class Application2 {
 
@@ -87,10 +100,21 @@ public class Application2 {
 		Machine machine2 = new Machine("Bert");
 		Machine machine3 = new Machine("Chalk", 7);
 		
+		Thing.description = "I am a thing";
+		
 		Thing thing1 = new Thing();
 		Thing thing2 = new Thing();
 		thing1.name = "Bob";
 		thing2.name = "Sue";
+		
+		thing1.showName();
+		thing2.showName();
+		
+		System.out.println(Math.PI);
+		System.out.println(Thing.LUCKY_NMBR);
+		System.out.println(Thing.count);
+		System.out.println(thing2.id);
+		System.out.println(thing1.id);
 		
 	}
 
