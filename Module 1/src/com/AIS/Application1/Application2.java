@@ -43,23 +43,7 @@ class Frog {
 		this.age = age;
 	}
 }
-class Machine {
-	private String name;
-	private int code;
-	public Machine() {
-		
-		System.out.println("Constructor running.");
-	}
-	public Machine(String name){
-		System.out.println("Second constructor running.");
-		this.name = name;
-	}
-	public Machine(String name, int code) {
-		System.out.println("Third constructor running.");
-		this.name = name;
-		this.code = code;		
-	}
-}
+
 class Thing {
 	public final static int LUCKY_NMBR=7;
 	public String name;
@@ -95,10 +79,7 @@ public class Application2 {
 		sam.speak("speak");
 		sam.jump(7);
 		sam.move("West", 12.7);
-		
-		Machine machine1 = new Machine();
-		Machine machine2 = new Machine("Bert");
-		Machine machine3 = new Machine("Chalk", 7);
+	
 		
 		Thing.description = "I am a thing";
 		

@@ -19,6 +19,8 @@ public class Application3 {
 		.append("pls give money");
 		
 		System.out.println(sb.toString());
+		System.out.printf("Total value %.2f", 5.6324537);
+		
 	}
 
 }
