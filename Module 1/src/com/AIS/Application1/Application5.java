@@ -12,6 +12,16 @@ public class Application5 {
 		car1.wipeWindShield();
 		car1.stop();
 
+		Person person = new Person("Bob");
+		person.greet();
+		
+		Info info1 = new Machine();
+		info1.showInfo();
+		outputInfo(mach1);
+		
+	}
+	private static void outputInfo(Info info){
+		info.showInfo();
 	}
 
 }
