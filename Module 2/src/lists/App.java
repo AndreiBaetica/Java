@@ -8,10 +8,10 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		public static List<String> toDo = new LinkedList<String>();
-		public static List<String> completed = new LinkedList<String>();
-
-
+		
+		
+		List<String> toDo = new LinkedList<String>();
+		List<String> completed = new LinkedList<String>();
 
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Available commands: \n1. Add task \n2. Remove task \n3. Remove completed task \n4. View to-do list \n5. View completed tasks \n");
@@ -25,7 +25,7 @@ public class App {
 			System.out.println("Enter a task to add: ");
 			String task = reader1.nextLine();
 			reader1.close();
-			Lists.toDo.add(task);
+			toDo.add(task);
 			main(args);
 		}
 
