@@ -19,7 +19,26 @@ class Lists {
 		l.clear();
 	}
 }
-
+class InputCheck extends App{
+	public static void check(){
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Are you sure you wish to clear all? Y/N");
+		String input = reader.nextLine();
+		if (input != "n" || input != "y") {
+			System.out.println("Invalid input.");
+			check();
+		}
+		if (input == "n"){
+		}
+		else{
+			Lists.toDo.clear();
+			Lists.completed.clear();
+		}
+		reader.close();
+		
+		
+	}
+}
 public class App {
 	// TODO: add are you sure check to option 4.
 
@@ -61,9 +80,7 @@ public class App {
 			main(args);
 		}
 		if (n == 4) {
-
-			Lists.toDo.clear();
-			Lists.completed.clear();
+			InputCheck.check();
 			main(args);
 		}
 		reader.close();
