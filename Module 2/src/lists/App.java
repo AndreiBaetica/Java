@@ -51,6 +51,7 @@ public class App {
 		int n = reader.nextInt();
 
 		if (n < 1 || n > 4) {
+			System.out.println("\n Invalid input.");
 			main(args);
 		}
 		if (n == 1) {
