@@ -24,17 +24,17 @@ class InputCheck extends App{
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Are you sure you wish to clear all? Y/N");
 		String input = reader.nextLine();
-		if (input != "n" || input != "y") {
-			System.out.println("Invalid input.");
-			check();
-		}
-		if (input == "n"){
-		}
-		else{
+		if(input.equals("y")){
 			Lists.toDo.clear();
 			Lists.completed.clear();
 		}
-		reader.close();
+		else if(input.equals("n")){
+		}
+		else {
+			System.out.println("Invalid input.");
+			check();
+		}
+		
 		
 		
 	}
@@ -85,5 +85,6 @@ public class App {
 			main(args);
 		}
 		reader.close();
+		
 	}
 }
