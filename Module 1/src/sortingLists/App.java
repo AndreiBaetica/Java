@@ -49,6 +49,8 @@ public class App {
 		});
 		for(Integer number:numbers){
 			System.out.println(number);
+
+
 		}
 	}
 
