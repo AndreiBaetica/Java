@@ -6,7 +6,6 @@
 /Polymorphism/
 /abstractClasses/
 /arrayLists/
-/collatzConjecture/
 /collections/
 /com/
 /customObjectsInSets/
@@ -19,8 +18,6 @@
 /iterators/
 /lambda/
 /linkedLists/
-/lists/
-/multithreading/
 /naturalOrder/
 /ocean/
 /passingByValue/
@@ -31,4 +28,4 @@
 /sortingLists/
 /tryWithResources/
 /writingFiles/
-/args/
+/experimentation/

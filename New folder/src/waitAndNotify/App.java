@@ -2,7 +2,7 @@ package waitAndNotify;
 
 public class App {
 
-	public static void main(String[] args) throws InterruptedException {
+	static public void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		final Processor processor = new Processor();
 		Thread t1 = new Thread(new Runnable(){
